@@ -236,6 +236,16 @@ export default function Home() {
         </aside>
       </section>
 
+      <figure className="frontispiece" aria-labelledby="frontispiece-caption">
+        <img
+          src="/og.png"
+          alt="Archive table with H-31 journals, catalogue slips, redacted report, measuring instrument, and route map."
+        />
+        <figcaption id="frontispiece-caption">
+          Catalogue frontispiece prepared for the H-31 journal sequence.
+        </figcaption>
+      </figure>
+
       <section className="intro-band" id="history">
         <div>
           <p className="section-label">Brief history</p>

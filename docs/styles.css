@@ -205,6 +205,34 @@ h3 {
   border-bottom: 1px solid var(--rule);
 }
 
+.frontispiece {
+  margin: 0;
+  padding: clamp(26px, 5vw, 58px) clamp(20px, 6vw, 86px);
+  border-bottom: 1px solid var(--rule);
+  background: rgba(255, 253, 247, 0.42);
+}
+
+.frontispiece img {
+  display: block;
+  width: 100%;
+  max-width: 1180px;
+  height: auto;
+  max-height: 660px;
+  margin: 0 auto;
+  border: 1px solid var(--rule);
+  object-fit: cover;
+  box-shadow: 10px 12px 0 rgba(29, 27, 22, 0.08);
+}
+
+.frontispiece figcaption {
+  max-width: 1180px;
+  margin: 12px auto 0;
+  color: var(--muted);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
 .intro-band,
 .personnel,
 .contact,
@@ -521,6 +549,7 @@ address,
   }
 
   .hero,
+  .frontispiece,
   .intro-band,
   .archive,
   .demonstration,
@@ -532,6 +561,21 @@ address,
 
   .hero {
     padding-top: 34px;
+  }
+
+  .frontispiece {
+    padding-top: 18px;
+    padding-bottom: 28px;
+  }
+
+  .frontispiece img {
+    max-height: none;
+    box-shadow: 6px 7px 0 rgba(29, 27, 22, 0.08);
+  }
+
+  .frontispiece figcaption {
+    font-size: 0.7rem;
+    line-height: 1.45;
   }
 
   .hero-copy > p:not(.eyebrow),
