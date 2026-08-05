@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background:
     linear-gradient(90deg, rgba(125, 47, 38, 0.045) 1px, transparent 1px),
     linear-gradient(rgba(40, 63, 53, 0.04) 1px, transparent 1px),
@@ -101,8 +102,12 @@ nav a {
 h1,
 h2,
 h3,
-p {
+p,
+dd,
+li,
+address {
   margin-top: 0;
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -460,10 +465,13 @@ address,
 
   .site-header {
     align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
   }
 
   nav {
     max-width: 440px;
+    justify-content: flex-start;
   }
 
   .hero {
@@ -483,16 +491,53 @@ address,
 }
 
 @media (max-width: 620px) {
+  body {
+    background-size: 28px 28px;
+  }
+
   .site-header {
     position: static;
+    padding: 12px 16px;
   }
 
   nav {
     justify-content: flex-start;
+    gap: 7px 12px;
+    font-size: 0.72rem;
   }
 
   h1 {
-    font-size: clamp(2.7rem, 16vw, 4.4rem);
+    font-size: clamp(2.45rem, 13vw, 3.75rem);
+    line-height: 0.98;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 9vw, 2.6rem);
+    line-height: 1.04;
+  }
+
+  h3 {
+    font-size: clamp(1.35rem, 7vw, 2rem);
+  }
+
+  .hero,
+  .intro-band,
+  .archive,
+  .demonstration,
+  .personnel,
+  .contact {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .hero {
+    padding-top: 34px;
+  }
+
+  .hero-copy > p:not(.eyebrow),
+  .section-heading > p,
+  .intro-band > p {
+    font-size: 1.06rem;
   }
 
   .hero-actions,
@@ -509,5 +554,82 @@ address,
   .primary-link,
   .secondary-link {
     justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    text-align: center;
+  }
+
+  .catalogue-card {
+    min-height: 210px;
+    padding: 20px;
+    box-shadow: 6px 7px 0 rgba(29, 27, 22, 0.08);
+  }
+
+  .catalogue-card strong {
+    margin-top: 36px;
+    font-size: 1.65rem;
+  }
+
+  .volume-list {
+    gap: 18px;
+  }
+
+  .volume-body {
+    padding: 20px 16px;
+  }
+
+  .plate {
+    min-height: 190px;
+  }
+
+  .plate::before {
+    inset: 12px;
+  }
+
+  .plate::after {
+    inset: 28px;
+  }
+
+  .plate span {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    font-size: 0.68rem;
+  }
+
+  blockquote {
+    padding-left: 14px;
+  }
+
+  blockquote p {
+    font-size: 1.02rem;
+    line-height: 1.58;
+  }
+
+  .notice {
+    padding: 20px 16px;
+  }
+
+  .notice li {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  nav {
+    font-size: 0.68rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .eyebrow,
+  .section-label,
+  .volume-kicker,
+  .notice-date,
+  .marginalia,
+  .quiet-note {
+    font-size: 0.72rem;
   }
 }
