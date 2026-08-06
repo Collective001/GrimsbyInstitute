@@ -136,7 +136,7 @@ const volumes = [
   },
 ];
 
-const observations = [
+const observationSequence = [
   "BASELINE",
   "COMPOUND",
   "SEA",
@@ -158,7 +158,6 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="#institute">The Institute</a>
           <a href="#archive">The Archive</a>
-          <a href="#observations">Observations</a>
           <a href="#demonstration">Public Demonstrations</a>
           <a href="#reading-room">Reading Room</a>
           <a href="#registry">Registry</a>
@@ -284,19 +283,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="observations" id="observations">
-        <div>
-          <p className="section-label">Observations</p>
-          <h2>Material accompanying the journals</h2>
-        </div>
-        <div className="asset-grid" aria-label="Archival material">
-          <div className="asset botanical" aria-label="Engraved botanical plate" />
-          <div className="asset medical" aria-label="Victorian medical engraving" />
-          <div className="asset map" aria-label="Uncorrected city map" />
-          <div className="asset ledger" aria-label="Committee ledger slip" />
-        </div>
-      </section>
-
       <section className="demonstration" id="demonstration">
         <div className="section-heading">
           <p className="section-label">Public Demonstrations</p>
@@ -309,7 +295,7 @@ export default function Home() {
         </div>
         <div className="notice">
           <ol>
-            {observations.map((item) => (
+            {observationSequence.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ol>

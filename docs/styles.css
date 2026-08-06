@@ -240,7 +240,6 @@ h3 {
 .frontispiece,
 .institute,
 .archive,
-.observations,
 .demonstration,
 .reading-room,
 .registry {
@@ -275,7 +274,6 @@ h3 {
 }
 
 .institute,
-.observations,
 .reading-room,
 .section-heading {
   display: grid;
@@ -474,57 +472,6 @@ details p {
   font-size: 0.78rem;
 }
 
-.asset-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.asset {
-  position: relative;
-  min-height: 230px;
-  border: 1px solid rgba(176, 138, 72, 0.44);
-  background: rgba(43, 33, 24, 0.88);
-  overflow: hidden;
-}
-
-.asset::before {
-  content: "";
-  position: absolute;
-  inset: 28px;
-  border: 1px solid rgba(239, 227, 198, 0.2);
-}
-
-.botanical::after,
-.medical::after,
-.map::after,
-.ledger::after {
-  content: "";
-  position: absolute;
-  inset: 46px 38px 62px;
-  border: 1px solid rgba(156, 172, 138, 0.45);
-}
-
-.botanical::after {
-  border-radius: 50% 50% 12% 12%;
-  box-shadow: 22px 22px 0 -18px rgba(176, 138, 72, 0.7), -18px 34px 0 -16px rgba(156, 172, 138, 0.7);
-}
-
-.medical::after {
-  border-radius: 44% 44% 12% 12%;
-  box-shadow: inset 0 -34px 0 rgba(111, 36, 29, 0.28);
-}
-
-.map::after {
-  background:
-    linear-gradient(35deg, transparent 48%, rgba(176, 138, 72, 0.55) 49% 51%, transparent 52%),
-    linear-gradient(120deg, transparent 48%, rgba(156, 172, 138, 0.42) 49% 51%, transparent 52%);
-}
-
-.ledger::after {
-  background: repeating-linear-gradient(0deg, transparent 0 18px, rgba(239, 227, 198, 0.18) 18px 19px);
-}
-
 .notice {
   padding: clamp(24px, 4vw, 42px);
 }
@@ -583,7 +530,6 @@ details p {
   .study,
   .institute,
   .section-heading,
-  .observations,
   .reading-room,
   .volume {
     grid-template-columns: 1fr;
@@ -608,10 +554,6 @@ details p {
     min-height: 250px;
     border-right: 0;
     border-bottom: 1px solid rgba(176, 138, 72, 0.44);
-  }
-
-  .asset-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -639,7 +581,6 @@ details p {
   .frontispiece,
   .institute,
   .archive,
-  .observations,
   .demonstration,
   .reading-room,
   .registry {
@@ -668,8 +609,7 @@ details p {
   }
 
   .metadata,
-  .notice ol,
-  .asset-grid {
+  .notice ol {
     grid-template-columns: 1fr;
   }
 
@@ -680,9 +620,5 @@ details p {
   blockquote p {
     font-size: 1.02rem;
     line-height: 1.64;
-  }
-
-  .asset {
-    min-height: 180px;
   }
 }
