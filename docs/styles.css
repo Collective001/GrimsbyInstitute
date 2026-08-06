@@ -1,13 +1,14 @@
 :root {
-  --paper: #f4f1e8;
-  --paper-deep: #e1d9c7;
-  --ink: #1d1b16;
-  --muted: #665f52;
-  --rule: #b9ad98;
-  --oxide: #7d2f26;
-  --green: #283f35;
-  --blue: #273f55;
-  --white: #fffdf7;
+  --paper: #171a17;
+  --paper-deep: #25271f;
+  --ink: #f2ead7;
+  --muted: #c5bba4;
+  --rule: #6f624d;
+  --oxide: #d18a73;
+  --green: #a9c4ad;
+  --blue: #aebfca;
+  --white: #22241d;
+  --shadow: rgba(0, 0, 0, 0.34);
 }
 
 * {
@@ -22,8 +23,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    linear-gradient(90deg, rgba(125, 47, 38, 0.045) 1px, transparent 1px),
-    linear-gradient(rgba(40, 63, 53, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(209, 138, 115, 0.055) 1px, transparent 1px),
+    linear-gradient(rgba(242, 234, 215, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 20% 0%, rgba(111, 98, 77, 0.2), transparent 34rem),
     var(--paper);
   background-size: 38px 38px;
   color: var(--ink);
@@ -44,7 +46,7 @@ a {
   gap: 24px;
   padding: 14px clamp(18px, 4vw, 54px);
   border-bottom: 1px solid var(--rule);
-  background: rgba(244, 241, 232, 0.94);
+  background: rgba(23, 26, 23, 0.94);
   backdrop-filter: blur(10px);
 }
 
@@ -174,9 +176,9 @@ h3 {
   padding: 26px;
   border: 1px solid var(--rule);
   background:
-    linear-gradient(135deg, rgba(39, 63, 85, 0.12), transparent 42%),
+    linear-gradient(135deg, rgba(209, 138, 115, 0.1), transparent 42%),
     var(--white);
-  box-shadow: 10px 12px 0 rgba(29, 27, 22, 0.08);
+  box-shadow: 10px 12px 0 var(--shadow);
 }
 
 .catalogue-card p,
@@ -209,7 +211,7 @@ h3 {
   margin: 0;
   padding: clamp(26px, 5vw, 58px) clamp(20px, 6vw, 86px);
   border-bottom: 1px solid var(--rule);
-  background: rgba(255, 253, 247, 0.42);
+  background: rgba(34, 36, 29, 0.48);
 }
 
 .frontispiece img {
@@ -221,7 +223,7 @@ h3 {
   margin: 0 auto;
   border: 1px solid var(--rule);
   object-fit: cover;
-  box-shadow: 10px 12px 0 rgba(29, 27, 22, 0.08);
+  box-shadow: 10px 12px 0 var(--shadow);
 }
 
 .frontispiece figcaption {
@@ -256,7 +258,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
   border: 1px solid var(--rule);
-  background: rgba(255, 253, 247, 0.78);
+  background: rgba(34, 36, 29, 0.86);
 }
 
 .plate {
@@ -272,7 +274,7 @@ h3 {
   position: absolute;
   content: "";
   inset: 18px;
-  border: 1px solid rgba(29, 27, 22, 0.36);
+  border: 1px solid rgba(242, 234, 215, 0.28);
 }
 
 .plate::after {
@@ -287,7 +289,7 @@ h3 {
   bottom: 20px;
   left: 20px;
   z-index: 2;
-  color: rgba(29, 27, 22, 0.74);
+  color: rgba(242, 234, 215, 0.8);
   font-family: "Courier New", monospace;
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -297,13 +299,13 @@ h3 {
   background:
     radial-gradient(circle at 40% 38%, transparent 0 42px, rgba(125, 47, 38, 0.45) 43px 45px, transparent 46px),
     linear-gradient(90deg, transparent 48%, rgba(40, 63, 53, 0.3) 49% 51%, transparent 52%),
-    linear-gradient(rgba(39, 63, 85, 0.18), rgba(225, 217, 199, 0.95));
+    linear-gradient(rgba(44, 58, 60, 0.85), rgba(37, 39, 31, 0.95));
 }
 
 .sea {
   background:
     repeating-linear-gradient(168deg, rgba(39, 63, 85, 0.28) 0 2px, transparent 2px 18px),
-    linear-gradient(180deg, #d9e0dc, var(--paper-deep));
+    linear-gradient(180deg, #33444a, var(--paper-deep));
 }
 
 .paris {
@@ -311,27 +313,27 @@ h3 {
     linear-gradient(35deg, transparent 0 44%, rgba(125, 47, 38, 0.35) 45% 47%, transparent 48%),
     linear-gradient(115deg, transparent 0 35%, rgba(39, 63, 85, 0.28) 36% 38%, transparent 39%),
     repeating-linear-gradient(90deg, rgba(29, 27, 22, 0.12) 0 1px, transparent 1px 28px),
-    var(--paper-deep);
+    #25271f;
 }
 
 .caution {
   background:
     repeating-linear-gradient(45deg, rgba(125, 47, 38, 0.18) 0 12px, transparent 12px 24px),
-    linear-gradient(180deg, #eee7d8, #d5cbb7);
+    linear-gradient(180deg, #342621, #25271f);
 }
 
 .revitalize {
   background:
     radial-gradient(ellipse at 55% 48%, rgba(40, 63, 53, 0.36) 0 58px, transparent 60px),
     repeating-linear-gradient(0deg, rgba(155, 122, 53, 0.22) 0 2px, transparent 2px 24px),
-    var(--paper-deep);
+    #25271f;
 }
 
 .cloud {
   background:
     radial-gradient(ellipse at 35% 42%, rgba(255, 253, 247, 0.9) 0 48px, transparent 50px),
     radial-gradient(ellipse at 62% 34%, rgba(255, 253, 247, 0.72) 0 38px, transparent 40px),
-    linear-gradient(180deg, #cfd6d1, #eee7d8);
+    linear-gradient(180deg, #3a4341, #25271f);
 }
 
 .baseline {
@@ -339,7 +341,7 @@ h3 {
     linear-gradient(90deg, rgba(39, 63, 85, 0.3) 0 1px, transparent 1px 44px),
     linear-gradient(rgba(39, 63, 85, 0.22) 0 1px, transparent 1px 44px),
     linear-gradient(135deg, transparent 42%, rgba(125, 47, 38, 0.34) 43% 45%, transparent 46%),
-    var(--paper-deep);
+    #25271f;
 }
 
 .volume-body {
@@ -570,7 +572,7 @@ address,
 
   .frontispiece img {
     max-height: none;
-    box-shadow: 6px 7px 0 rgba(29, 27, 22, 0.08);
+    box-shadow: 6px 7px 0 var(--shadow);
   }
 
   .frontispiece figcaption {
@@ -606,7 +608,7 @@ address,
   .catalogue-card {
     min-height: 210px;
     padding: 20px;
-    box-shadow: 6px 7px 0 rgba(29, 27, 22, 0.08);
+    box-shadow: 6px 7px 0 var(--shadow);
   }
 
   .catalogue-card strong {
