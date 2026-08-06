@@ -148,13 +148,6 @@ const observations = [
   "RETURN TO BASELINE",
 ];
 
-const registry = [
-  ["Seal impression", "GIEM/S/1862", "Wax incomplete; motto only partially legible."],
-  ["Botanical plate", "GIEM/PL/44", "Unattributed engraving filed with H-31 correspondence."],
-  ["Map fragment", "GIEM/M/B-7", "Shows Room 6A, later corrected to no room."],
-  ["Committee slip", "GIEM/C/19", "Approves further reading under lamplight only."],
-];
-
 export default function Home() {
   return (
     <main>
@@ -297,18 +290,10 @@ export default function Home() {
           <h2>Material accompanying the journals</h2>
         </div>
         <div className="asset-grid" aria-label="Archival material">
-          <div className="asset botanical">
-            <span>Engraved botanical plate</span>
-          </div>
-          <div className="asset medical">
-            <span>Victorian medical engraving</span>
-          </div>
-          <div className="asset map">
-            <span>Uncorrected city map</span>
-          </div>
-          <div className="asset ledger">
-            <span>Committee ledger slip</span>
-          </div>
+          <div className="asset botanical" aria-label="Engraved botanical plate" />
+          <div className="asset medical" aria-label="Victorian medical engraving" />
+          <div className="asset map" aria-label="Uncorrected city map" />
+          <div className="asset ledger" aria-label="Committee ledger slip" />
         </div>
       </section>
 
@@ -351,19 +336,12 @@ export default function Home() {
       </section>
 
       <section className="registry" id="registry">
-        <div>
-          <p className="section-label">Registry</p>
-          <h2>Selected catalogue elements</h2>
-        </div>
-        <div className="registry-list">
-          {registry.map(([name, mark, note]) => (
-            <article key={mark}>
-              <span>{mark}</span>
-              <h3>{name}</h3>
-              <p>{note}</p>
-            </article>
-          ))}
-        </div>
+        <p className="section-label">Registry</p>
+        <p>
+          GIEM/S/1862 / Catalogue Room B / H-31 sequence retained under the
+          original brass weights. Accessions reviewed without interpretive
+          correction.
+        </p>
       </section>
     </main>
   );
