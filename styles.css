@@ -1,0 +1,624 @@
+:root {
+  --walnut: #120c08;
+  --mahogany: #2a130d;
+  --leather: #471b16;
+  --oxblood: #6f241d;
+  --brass: #b08a48;
+  --brass-dim: #6d5633;
+  --ivory: #efe3c6;
+  --paper: #d8c7a3;
+  --paper-dark: #2b2118;
+  --green: #53624c;
+  --green-faded: #9cac8a;
+  --ink: #f5ecd7;
+  --muted: #c8b996;
+  --rule: #6e5838;
+  --black: #090604;
+  --shadow: rgba(0, 0, 0, 0.42);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 76% 8%, rgba(176, 138, 72, 0.22), transparent 22rem),
+    radial-gradient(circle at 20% 0%, rgba(111, 36, 29, 0.26), transparent 26rem),
+    repeating-linear-gradient(92deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 26px),
+    linear-gradient(135deg, #1b0f09, var(--walnut) 48%, #0b0705);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px clamp(18px, 4vw, 54px);
+  border-bottom: 1px solid rgba(176, 138, 72, 0.38);
+  background: rgba(18, 12, 8, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+.seal {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--brass);
+  border-radius: 50%;
+  color: var(--brass);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 5px rgba(176, 138, 72, 0.08);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
+  color: var(--muted);
+  font-family: "Courier New", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-underline-offset: 4px;
+}
+
+.study {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  gap: clamp(28px, 6vw, 72px);
+  padding: clamp(46px, 7vw, 88px) clamp(20px, 6vw, 86px) clamp(34px, 5vw, 64px);
+  border-bottom: 1px solid var(--rule);
+  background:
+    linear-gradient(90deg, rgba(18, 12, 8, 0.78), rgba(18, 12, 8, 0.2)),
+    repeating-linear-gradient(0deg, rgba(255, 236, 190, 0.035) 0 1px, transparent 1px 8px);
+}
+
+.lamp {
+  position: absolute;
+  top: 0;
+  right: 12%;
+  width: 34vw;
+  height: 28vw;
+  max-width: 520px;
+  max-height: 380px;
+  pointer-events: none;
+  background: radial-gradient(ellipse at top, rgba(255, 196, 102, 0.36), transparent 65%);
+  opacity: 0.75;
+}
+
+.study-copy {
+  position: relative;
+  max-width: 820px;
+}
+
+.eyebrow,
+.section-label,
+.volume-kicker,
+.notice-date {
+  color: var(--brass);
+  font-family: "Courier New", monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p,
+dd,
+li,
+address {
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  max-width: 820px;
+  margin-bottom: 22px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.65rem, 5.8vw, 5.4rem);
+  font-weight: 500;
+  line-height: 0.98;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.85rem, 3.5vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.6vw, 2.2rem);
+  font-weight: 500;
+}
+
+.study-copy > p:not(.eyebrow),
+.section-heading > p,
+.paper-panel p {
+  max-width: 740px;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.06rem, 1.8vw, 1.32rem);
+  line-height: 1.7;
+}
+
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 16px;
+  padding: 12px 18px;
+  border: 1px solid var(--brass);
+  color: var(--ivory);
+  background: rgba(71, 27, 22, 0.72);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.desk-card,
+.paper-panel,
+.notice {
+  border: 1px solid rgba(176, 138, 72, 0.45);
+  background:
+    linear-gradient(135deg, rgba(239, 227, 198, 0.08), transparent 38%),
+    rgba(43, 33, 24, 0.88);
+  box-shadow: 12px 14px 0 var(--shadow);
+}
+
+.desk-card {
+  position: relative;
+  align-self: end;
+  min-height: 360px;
+  padding: 28px;
+}
+
+.seal-mark {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 34px;
+  border: 1px solid var(--brass);
+  border-radius: 50%;
+  color: var(--brass);
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  box-shadow:
+    inset 0 0 0 8px rgba(176, 138, 72, 0.08),
+    inset 0 0 0 18px rgba(176, 138, 72, 0.04);
+}
+
+.desk-card p,
+.desk-card span {
+  display: block;
+  color: var(--muted);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.desk-card strong {
+  display: block;
+  margin: 14px 0 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.frontispiece,
+.institute,
+.archive,
+.demonstration,
+.reading-room,
+.registry {
+  padding: clamp(42px, 7vw, 84px) clamp(20px, 6vw, 86px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.frontispiece {
+  margin: 0;
+  background:
+    linear-gradient(rgba(18, 12, 8, 0.18), rgba(18, 12, 8, 0.72)),
+    rgba(43, 33, 24, 0.42);
+}
+
+.frontispiece img {
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid rgba(176, 138, 72, 0.45);
+  box-shadow: 14px 16px 0 var(--shadow);
+}
+
+.frontispiece figcaption {
+  max-width: 1080px;
+  margin: 12px auto 0;
+  color: var(--muted);
+  font-family: "Courier New", monospace;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+
+.institute,
+.reading-room,
+.section-heading {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(28px, 5vw, 76px);
+}
+
+.paper-panel {
+  padding: clamp(24px, 4vw, 40px);
+}
+
+.section-heading {
+  align-items: end;
+  margin-bottom: 34px;
+}
+
+.volume-list {
+  display: grid;
+  gap: 26px;
+}
+
+.volume {
+  display: grid;
+  grid-template-columns: minmax(220px, 315px) minmax(0, 1fr);
+  border: 1px solid rgba(176, 138, 72, 0.44);
+  background:
+    linear-gradient(90deg, rgba(71, 27, 22, 0.38), transparent 26%),
+    rgba(31, 23, 17, 0.92);
+  box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.22);
+}
+
+.plate {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  border-right: 1px solid rgba(176, 138, 72, 0.44);
+  background-color: var(--paper-dark);
+}
+
+.plate::before,
+.plate::after {
+  position: absolute;
+  content: "";
+  inset: 18px;
+  border: 1px solid rgba(239, 227, 198, 0.24);
+}
+
+.plate::after {
+  inset: 38px;
+  border-style: dashed;
+  opacity: 0.65;
+}
+
+.plate span {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  color: rgba(239, 227, 198, 0.82);
+  font-family: "Courier New", monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.compound,
+.polymer {
+  background:
+    radial-gradient(circle at 42% 38%, transparent 0 38px, rgba(176, 138, 72, 0.45) 39px 41px, transparent 42px),
+    linear-gradient(90deg, transparent 48%, rgba(156, 172, 138, 0.26) 49% 51%, transparent 52%),
+    linear-gradient(#322019, #17100c);
+}
+
+.baseline,
+.return {
+  background:
+    linear-gradient(90deg, rgba(176, 138, 72, 0.28) 0 1px, transparent 1px 42px),
+    linear-gradient(rgba(176, 138, 72, 0.16) 0 1px, transparent 1px 42px),
+    linear-gradient(135deg, transparent 42%, rgba(111, 36, 29, 0.42) 43% 45%, transparent 46%),
+    #1d1712;
+}
+
+.sea,
+.doubt {
+  background:
+    repeating-linear-gradient(168deg, rgba(83, 98, 76, 0.34) 0 2px, transparent 2px 18px),
+    linear-gradient(180deg, #25312c, #17100c);
+}
+
+.paris {
+  background:
+    linear-gradient(35deg, transparent 0 44%, rgba(111, 36, 29, 0.42) 45% 47%, transparent 48%),
+    linear-gradient(115deg, transparent 0 35%, rgba(176, 138, 72, 0.28) 36% 38%, transparent 39%),
+    repeating-linear-gradient(90deg, rgba(239, 227, 198, 0.08) 0 1px, transparent 1px 28px),
+    #201711;
+}
+
+.worry {
+  background:
+    repeating-linear-gradient(45deg, rgba(111, 36, 29, 0.34) 0 12px, transparent 12px 24px),
+    linear-gradient(180deg, #301712, #17100c);
+}
+
+.revitalize {
+  background:
+    radial-gradient(ellipse at 55% 48%, rgba(83, 98, 76, 0.42) 0 58px, transparent 60px),
+    repeating-linear-gradient(0deg, rgba(176, 138, 72, 0.22) 0 2px, transparent 2px 24px),
+    #17100c;
+}
+
+.volume-body {
+  padding: clamp(22px, 4vw, 44px);
+}
+
+.volume-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 26px;
+  padding: 0 0 22px;
+  border-bottom: 1px solid rgba(176, 138, 72, 0.36);
+}
+
+dt {
+  color: var(--muted);
+  font-family: "Courier New", monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 5px 0 0;
+  line-height: 1.38;
+}
+
+.entries {
+  display: grid;
+  gap: 17px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 0 0 18px;
+  border-left: 2px solid var(--brass);
+}
+
+blockquote time {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--green-faded);
+  font-family: "Courier New", monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+blockquote p {
+  margin-bottom: 0;
+  color: var(--ivory);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  line-height: 1.76;
+}
+
+details {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(176, 138, 72, 0.36);
+}
+
+summary {
+  cursor: pointer;
+  color: var(--brass);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+details p {
+  max-width: 760px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.crossref {
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+}
+
+.notice {
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.notice ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: sequence;
+}
+
+.notice li {
+  counter-increment: sequence;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(176, 138, 72, 0.34);
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+}
+
+.notice li::before {
+  content: counter(sequence, decimal-leading-zero);
+  color: var(--brass);
+  font-size: 0.75rem;
+}
+
+.registry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 28px;
+  padding-top: 26px;
+  padding-bottom: 28px;
+  background: rgba(9, 6, 4, 0.32);
+}
+
+.registry p:not(.section-label) {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Courier New", monospace;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+  .site-header,
+  .study,
+  .institute,
+  .section-heading,
+  .reading-room,
+  .volume {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  .desk-card {
+    align-self: stretch;
+    min-height: 260px;
+  }
+
+  .plate {
+    min-height: 250px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(176, 138, 72, 0.44);
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    position: static;
+    padding: 12px 16px;
+  }
+
+  nav {
+    gap: 7px 12px;
+    font-size: 0.68rem;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 12vw, 3.45rem);
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: clamp(1.65rem, 8vw, 2.35rem);
+  }
+
+  .study,
+  .frontispiece,
+  .institute,
+  .archive,
+  .demonstration,
+  .reading-room,
+  .registry {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .study {
+    padding-top: 32px;
+  }
+
+  .primary-link {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .desk-card,
+  .paper-panel,
+  .notice {
+    box-shadow: 6px 7px 0 var(--shadow);
+  }
+
+  .frontispiece img {
+    box-shadow: 6px 7px 0 var(--shadow);
+  }
+
+  .metadata,
+  .notice ol {
+    grid-template-columns: 1fr;
+  }
+
+  .volume-body {
+    padding: 20px 16px;
+  }
+
+  blockquote p {
+    font-size: 1.02rem;
+    line-height: 1.64;
+  }
+}
