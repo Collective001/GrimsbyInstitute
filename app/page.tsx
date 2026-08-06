@@ -2,196 +2,157 @@ const volumes = [
   {
     roman: "I",
     title: "COMPOUND",
-    years: "1869-1871",
-    place: "Grimsby Institute, East Ward Annex",
+    years: "1869-1870",
+    place: "East Ward Annex, Grimsby Institute",
     shelf: "GIEM/H31/I",
-    status: "Complete with missing leaf after fol. 42",
-    image: "compound",
+    condition: "Complete save for a removed gathering after fol. 42",
+    plate: "compound",
     entries: [
-      {
-        date: "17 February 1869",
-        text: "Subject H-31 presented no resistance to ordinary measures of attention. The leftward pulse, if that term may be admitted provisionally, answered to the brass meter with gratifying regularity. I have instructed Porter to continue the morning observations and to avoid naming the second vessel until its necessity has been demonstrated.",
-      },
-      {
-        date: "2 May 1870",
-        text: "Our original compound was never a compound. It was a convenient agreement among instruments. I have therefore begun again, this time with the window covered, the floor measured, and the assistant placed where his expectations cannot easily enter the result.",
-      },
-      {
-        date: "undated, filed between June and July 1871",
-        text: "Appendix C would clarify the matter of departure, but Appendix C is not to be consulted until the reader has first satisfied himself that departure occurred. This is not circular. It is only inconvenient.",
-      },
+      ["17 February 1869", "Subject H-31 tolerated the ordinary glass, the brass meter, and the covered basin without appreciable complaint. The leftward pulse, if provisionally accepted as pulse, remained regular under Porter's count."],
+      ["2 May 1870", "The compound has proved to be an agreement among instruments rather than a property of H-31. I have therefore repeated the morning series with the window curtained, the assistant repositioned, and the word compound withheld from the room."],
+      ["undated, filed after June 1870", "Appendix C would clarify the departure, but Appendix C is not to be consulted until the reader has first satisfied himself that departure occurred."],
     ],
-    marginalia:
-      "Archivist note, 1934: No Appendix C has been located. The binding suggests a removal before accession, not later loss.",
+    note: "Archivist note, 1934: Appendix C has not been located. The string impression in the gutter suggests deliberate removal before accession.",
   },
   {
     roman: "II",
-    title: "SEA",
-    years: "1872-1876",
-    place: "Hull, Whitby, North Sea packet routes",
+    title: "BASELINE",
+    years: "1871",
+    place: "Reading Room B and the disused weighing corridor",
     shelf: "GIEM/H31/II",
-    status: "Water damage; two charts reversed",
-    image: "sea",
+    condition: "Two leaves copied from a damaged fair hand",
+    plate: "baseline",
     entries: [
-      {
-        date: "9 March 1872",
-        text: "The sailors deny seeing it and are offended by my gratitude. I record only that three men looked at the same empty portion of deck and then made three different repairs to their coats.",
-      },
-      {
-        date: "24 August 1874",
-        text: "Sea observation corrects the Institute's worst habit: walls persuade the observer that containment and comprehension are cousins. The horizon is the better instrument. It refuses to help.",
-      },
-      {
-        date: "11 January 1876",
-        text: "I have ceased to ask whether H-31 is before or behind me. Both formulations assume a line, and the line has performed poorly under scrutiny.",
-      },
+      ["4 January 1871", "A baseline is not the beginning. It is the first error granted furniture. I record this not as criticism of the Committee, but as a precaution against gratitude."],
+      ["19 March 1871", "H-31 was not present in the weighing corridor. The corridor was consequently measured. Its length exceeded the plan by seven inches when approached from the south and agreed precisely when approached by Porter."],
+      ["28 October 1871", "The escaped condition cannot be described without borrowing the assumptions that made escape possible. I have sealed the page until a less confident vocabulary presents itself."],
     ],
-    marginalia:
-      "Committee minute, 1877: Dr. Grimsby's travel expenses were approved, provided future invoices distinguish fare, freight, and 'necessary rope.'",
+    note: "Committee minute: The room named Weighing Corridor does not appear in the 1870 plan. It appears in the 1868 plan, erased.",
   },
   {
     roman: "III",
-    title: "PARIS",
-    years: "1877-1881",
-    place: "Paris hospitals, drains, and lecture rooms",
+    title: "SEA",
+    years: "1872-1875",
+    place: "Hull, Whitby, packet routes, and unnamed slips",
     shelf: "GIEM/H31/III",
-    status: "French inserts retained in original order",
-    image: "paris",
+    condition: "Salt marking; charts mounted in reverse order",
+    plate: "sea",
     entries: [
-      {
-        date: "3 April 1877",
-        text: "At the Salpetriere I found a method beautifully unsuited to my purpose. The demonstrator fixed the patient, the lamp, the audience, and finally his own conclusion. H-31 would not survive such neatness, which may mean only that neatness would not survive H-31.",
-      },
-      {
-        date: "16 October 1879",
-        text: "The Paris map is accurate until used. I have marked the streets where H-31 was not present, then the streets where absence failed to remain stable. Dupin says this is superstition. I have invited him to repeat the walk without me.",
-      },
-      {
-        date: "5 February 1881",
-        text: "Readers familiar with the third Parisian precaution will understand why the mirror was wrapped after noon but before the bell. Readers unfamiliar with it should not infer that the precaution was optional.",
-      },
+      ["9 March 1872", "The sailors deny seeing it and are offended by my gratitude. I record only that three men looked at the same empty portion of deck and then made three different repairs to their coats."],
+      ["24 August 1874", "Sea observation corrects the Institute's worst habit. Walls persuade the observer that containment and comprehension are relations. The horizon is the better instrument. It refuses to assist."],
+      ["11 January 1875", "I have ceased asking whether H-31 is before or behind me. Both formulations assume a line, and the line has performed poorly under scrutiny."],
     ],
-    marginalia:
-      "Later pencil, hand unknown: The 'third Parisian precaution' is mentioned nine times. It is never described.",
+    note: "Expenses approved provided future invoices distinguish fare, freight, rope, and rope later found unnecessary.",
   },
   {
     roman: "IV",
-    title: "CAUTION",
-    years: "1882-1885",
-    place: "Geneva, alpine clinics, transit rooms",
+    title: "POLYMER",
+    years: "1876-1877",
+    place: "Manchester manufactories and temporary laboratory rooms",
     shelf: "GIEM/H31/IV",
-    status: "Redactions authorized by the Subcommittee on Ordinary Safety",
-    image: "caution",
+    condition: "Industrial soot at fore edge; one report redacted twice",
+    plate: "polymer",
     entries: [
-      {
-        date: "12 June 1882",
-        text: "I now distrust first sightings, second confirmations, and any conclusion that improves the mood of the room. The new procedure begins with the observer writing down what would please him most, sealing the page, and then proceeding as though it were a contaminant.",
-      },
-      {
-        date: "28 November 1883",
-        text: "H-31 was not detected in the corridor. I therefore examined the corridor, the meaning of detection, my appetite, and the clerk's insistence that no corridor had been assigned to us.",
-      },
-      {
-        date: "4 April 1885",
-        text: "Caution is not slowness. It is the refusal to let a successful method become a superstition with furniture.",
-      },
+      ["6 June 1876", "The manufacturers understand mixture but not relation. They are content when substances bind. I am concerned with the conditions under which a binding persuades the observer that two things have become one."],
+      ["12 December 1876", "H-31 was not recovered from the vat. The vat was emptied, dried, weighed, reassembled, and asked nothing further. I am not satisfied, though each step was successful."],
+      ["3 April 1877", "Procedure P requires the observer to name every surface before touching none of them. The foreman laughed until his sleeve repeated my measurements."],
     ],
-    marginalia:
-      "Redacted report R-14 contains only the phrase 'not reproducible under lamps' and five witness signatures.",
+    note: "Procedure P is cited by later volumes as if commonly understood. No standalone description survives.",
   },
   {
     roman: "V",
-    title: "REVITALIZE",
-    years: "1886-1888",
-    place: "Sanatoria of Bohemia and the Danube stations",
+    title: "PARIS",
+    years: "1877-1881",
+    place: "Paris hospitals, drains, lecture rooms, and private stair",
     shelf: "GIEM/H31/V",
-    status: "Complete; several pages copied from destroyed originals",
-    image: "revitalize",
+    condition: "French inserts retained; one map misdated 1880/1878",
+    plate: "paris",
     entries: [
-      {
-        date: "19 May 1886",
-        text: "The sanatorium physicians speak of recovery as a return. This is comforting and therefore suspect. If H-31 recovers, from what position does it return, and who had the discourtesy to name that position health?",
-      },
-      {
-        date: "7 September 1887",
-        text: "I revitalized the apparatus by removing the indicator, the scale, the hinge, and finally the apparatus. What remained produced the most consistent readings yet obtained, though I accept that the Committee will dislike the invoice.",
-      },
-      {
-        date: "31 January 1888",
-        text: "The assistant asked what we are reviving. I answered too quickly. I have crossed out the answer.",
-      },
+      ["3 April 1877", "At the Salpetriere I found a method beautifully unsuited to my purpose. The demonstrator fixed the patient, the lamp, the audience, and finally his own conclusion."],
+      ["16 October 1879", "The Paris map is accurate until used. I have marked the streets where H-31 was not present, then the streets where absence failed to remain stable."],
+      ["5 February 1881", "Readers familiar with the third Parisian precaution will understand why the mirror was wrapped after noon but before the bell."],
     ],
-    marginalia:
-      "Invoice dispute unresolved. The crate labelled 'Apparatus, revised' was found empty in 1902 and retained as evidence.",
+    note: "Later pencil, hand unknown: The third Parisian precaution is mentioned nine times. It is never described.",
   },
   {
     roman: "VI",
-    title: "CLOUD",
-    years: "1889-1890",
-    place: "Atlantic crossing, Halifax, elevated observatories",
+    title: "WORRY",
+    years: "1882-1884",
+    place: "Geneva rooms, alpine clinics, and transit ledgers",
     shelf: "GIEM/H31/VI",
-    status: "Meteorological inserts catalogued separately",
-    image: "cloud",
+    condition: "Censor's ribbon intact; several pages initialled by no committee member",
+    plate: "worry",
     entries: [
-      {
-        date: "14 July 1889",
-        text: "Clouds offer the courtesy of changing while one watches. They do not pretend the observer has caused the alteration. I have adopted them as instructors.",
-      },
-      {
-        date: "2 December 1889",
-        text: "At Halifax the barometer fell before I entered the room, during my stay, and again after I departed. Three falls, one instrument, no useful accusation.",
-      },
-      {
-        date: "8 August 1890",
-        text: "The cloud protocol requires the observer to record every boundary he invents, the minute he invented it, and the moment at which the boundary became embarrassing.",
-      },
+      ["12 June 1882", "I now distrust first sightings, second confirmations, and any conclusion that improves the mood of the room."],
+      ["28 November 1883", "H-31 was not detected in the corridor. I therefore examined the corridor, the meaning of detection, my appetite, and the clerk's insistence that no corridor had been assigned to us."],
+      ["4 April 1884", "Worry is not fear. It is the correct maintenance of an instrument known to be easily pleased."],
     ],
-    marginalia:
-      "Map Room copy references Stair B. No Stair B appears in any surviving plan of the Halifax rooms.",
+    note: "Subcommittee on Ordinary Safety: The report is acceptable if read without emphasis.",
   },
   {
     roman: "VII",
+    title: "REVITALIZE",
+    years: "1885-1888",
+    place: "Bohemian sanatoria, Danube stations, and recovery rooms",
+    shelf: "GIEM/H31/VII",
+    condition: "Complete; several pages copied from destroyed originals",
+    plate: "revitalize",
+    entries: [
+      ["19 May 1886", "The sanatorium physicians speak of recovery as a return. This is comforting and therefore suspect."],
+      ["7 September 1887", "I revitalized the apparatus by removing the indicator, the scale, the hinge, and finally the apparatus. What remained produced the most consistent readings yet obtained."],
+      ["31 January 1888", "The assistant asked what we are reviving. I answered too quickly. I have crossed out the answer."],
+    ],
+    note: "Invoice dispute unresolved. The crate labelled Apparatus, revised was found empty in 1902 and retained as evidence.",
+  },
+  {
+    roman: "VIII",
+    title: "DOUBT",
+    years: "1889-1890",
+    place: "Atlantic crossing, Halifax, and elevated observatories",
+    shelf: "GIEM/H31/VIII",
+    condition: "Meteorological inserts catalogued separately",
+    plate: "doubt",
+    entries: [
+      ["14 July 1889", "Clouds offer the courtesy of changing while one watches. They do not pretend the observer has caused the alteration."],
+      ["2 December 1889", "At Halifax the barometer fell before I entered the room, during my stay, and again after I departed. Three falls, one instrument, no useful accusation."],
+      ["8 August 1890", "The doubt protocol requires the observer to record every boundary he invents, the minute he invented it, and the moment at which the boundary became embarrassing."],
+    ],
+    note: "Map Room copy references Stair B. No Stair B appears in any surviving plan of the Halifax rooms.",
+  },
+  {
+    roman: "IX",
     title: "RETURN TO BASELINE",
     years: "1891",
-    place: "Boston, receiving rooms and hired lecture chamber",
-    shelf: "GIEM/H31/VII",
-    status: "Ends 27 October 1891",
-    image: "baseline",
+    place: "Boston receiving rooms and a hired lecture chamber",
+    shelf: "GIEM/H31/IX",
+    condition: "Final entry dated 27 October 1891",
+    plate: "return",
     entries: [
-      {
-        date: "3 September 1891",
-        text: "I have returned not to the Institute but to the first error that wore its coat. Baseline was never the beginning. It was merely the first measurement we were polite enough to believe.",
-      },
-      {
-        date: "18 October 1891",
-        text: "The city assists by arranging itself in grids and then betraying them at the alleys. I have marked the station, the dispensary, the private stair, the room below the room, and the door that opens only when approached from the wrong appointment.",
-      },
-      {
-        date: "27 October 1891",
-        text: "The observers are invited. I have placed the sequence in its proper order and removed all explanations that might encourage them to feel prepared. Four days remain. I am almost certain that is the correct number.",
-      },
+      ["3 September 1891", "I have returned not to the Institute but to the first error that wore its coat."],
+      ["18 October 1891", "The city assists by arranging itself in grids and then betraying them at the alleys. I have marked the station, the dispensary, the private stair, the room below the room, and the door that opens only when approached from the wrong appointment."],
+      ["27 October 1891", "The observers are invited. I have placed the sequence in its proper order and removed all explanations that might encourage them to feel prepared. Four days remain."],
     ],
-    marginalia:
-      "This is the final extant entry. The demonstration register begins on 31 October but contains no minutes.",
+    note: "This is the final extant entry. The demonstration register begins on 31 October but contains no minutes.",
   },
 ];
 
-const demonstrationSequence = [
+const observations = [
   "BASELINE",
   "COMPOUND",
   "SEA",
+  "POLYMER",
   "PARIS",
-  "CAUTION",
+  "WORRY",
   "REVITALIZE",
-  "CLOUD",
+  "DOUBT",
   "RETURN TO BASELINE",
 ];
 
-const personnel = [
-  ["Dr. Elias Grimsby", "Physician-observer, 1864-1891"],
-  ["Mrs. Ada Porter", "Recorder of instruments and travel receipts"],
-  ["L. March, F.R.C.P.", "Chair, Committee for Preservation"],
-  ["E. Vale", "Archivist responsible for the H-31 sequence"],
+const registry = [
+  ["Seal impression", "GIEM/S/1862", "Wax incomplete; motto only partially legible."],
+  ["Botanical plate", "GIEM/PL/44", "Unattributed engraving filed with H-31 correspondence."],
+  ["Map fragment", "GIEM/M/B-7", "Shows Room 6A, later corrected to no room."],
+  ["Committee slip", "GIEM/C/19", "Approves further reading under lamplight only."],
 ];
 
 export default function Home() {
@@ -202,37 +163,36 @@ export default function Home() {
           GIEM
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#history">History</a>
-          <a href="#archive">Archive</a>
+          <a href="#institute">The Institute</a>
+          <a href="#archive">The Archive</a>
+          <a href="#observations">Observations</a>
           <a href="#demonstration">Public Demonstrations</a>
-          <a href="#personnel">Personnel</a>
-          <a href="#contact">Contact</a>
+          <a href="#reading-room">Reading Room</a>
+          <a href="#registry">Registry</a>
         </nav>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow">Established 1862 / Catalogue Room B</p>
+      <section className="study" id="top">
+        <div className="lamp" aria-hidden="true" />
+        <div className="study-copy">
+          <p className="eyebrow">Catalogue Room B / Evening Access</p>
           <h1>The Grimsby Institute of Experimental Medicine</h1>
           <p>
-            Preserving the journals, observations, correspondence, and
-            procedural records of Dr. Elias Grimsby, with particular attention
-            to the long investigation catalogued as Subject H-31.
+            A private medical archive preserving the journals, procedural notes,
+            field maps, and observation registers of Dr. Elias Grimsby.
           </p>
-          <div className="hero-actions">
-            <a className="primary-link" href="#archive">
-              Read the journals
-            </a>
-            <a className="secondary-link" href="#demonstration">
-              Public observation
-            </a>
-          </div>
+          <a className="primary-link" href="#archive">
+            Open the journal sequence
+          </a>
         </div>
-        <aside className="catalogue-card" aria-label="Current archive notice">
-          <p>Current Finding Aid</p>
+        <aside className="desk-card">
+          <div className="seal-mark" aria-hidden="true">
+            GIEM
+          </div>
+          <p>Current accession</p>
           <strong>H-31 Journal Sequence</strong>
-          <span>Seven thematic volumes, 1869-1891</span>
-          <span>Access: supervised reading permitted</span>
+          <span>Nine bound volumes, 1869-1891</span>
+          <span>Handling: dry hands, brass weights, no prepared conclusions</span>
         </aside>
       </section>
 
@@ -242,40 +202,48 @@ export default function Home() {
           alt="Archive table with H-31 journals, catalogue slips, redacted report, measuring instrument, and route map."
         />
         <figcaption id="frontispiece-caption">
-          Catalogue frontispiece prepared for the H-31 journal sequence.
+          Frontispiece from the Institute's late catalogue impression, retained
+          with the H-31 journals.
         </figcaption>
       </figure>
 
-      <section className="intro-band" id="history">
+      <section className="institute" id="institute">
         <div>
-          <p className="section-label">Brief history</p>
-          <h2>An institute built to keep records before it kept opinions.</h2>
+          <p className="section-label">The Institute</p>
+          <h2>A learned society most comfortable in the margins.</h2>
         </div>
-        <p>
-          The Grimsby Institute was founded to preserve experimental medical
-          observations that could not yet be reconciled with ordinary practice.
-          Its best-known holdings are not administrative papers but the private
-          journals of Dr. Elias Grimsby, whose investigation into H-31 began as
-          a clinical study and became, by increments, a record of travel,
-          revision, and disciplined uncertainty.
-        </p>
+        <div className="paper-panel">
+          <p>
+            Founded in 1862, the Institute was established to preserve
+            experimental medical records judged too provisional for ordinary
+            publication and too carefully witnessed to discard. Its work has
+            always been custodial. The Institute does not interpret Dr.
+            Grimsby's journals for the reader. It supplies a table, a lamp, and
+            the original order of the papers.
+          </p>
+          <p>
+            The H-31 sequence remains the most requested collection. It begins
+            as a clinical record and becomes a travel narrative, then something
+            more difficult to classify without improving it falsely.
+          </p>
+        </div>
       </section>
 
       <section className="archive" id="archive">
         <div className="section-heading">
-          <p className="section-label">Archive</p>
+          <p className="section-label">The Archive</p>
           <h2>Journals of Dr. Elias Grimsby</h2>
           <p>
-            The Institute preserves the sequence in its thematic arrangement.
-            Titles are Dr. Grimsby's own. Explanatory apparatus has been kept
-            deliberately narrow where the source material resists summary.
+            Titles are Dr. Grimsby's own. The Institute has preserved missing
+            leaves, contradictory dates, and unexplained procedures as part of
+            the record rather than correcting them into confidence.
           </p>
         </div>
 
         <div className="volume-list">
           {volumes.map((volume, index) => (
             <article className="volume" key={volume.title}>
-              <div className={`plate ${volume.image}`} aria-hidden="true">
+              <div className={`plate ${volume.plate}`} aria-hidden="true">
                 <span>{volume.place}</span>
               </div>
               <div className="volume-body">
@@ -295,31 +263,52 @@ export default function Home() {
                   </div>
                   <div>
                     <dt>Condition</dt>
-                    <dd>{volume.status}</dd>
+                    <dd>{volume.condition}</dd>
                   </div>
                 </dl>
 
                 <div className="entries">
-                  {volume.entries.map((entry) => (
-                    <blockquote key={entry.date}>
-                      <time>{entry.date}</time>
-                      <p>{entry.text}</p>
+                  {volume.entries.map(([date, text]) => (
+                    <blockquote key={date}>
+                      <time>{date}</time>
+                      <p>{text}</p>
                     </blockquote>
                   ))}
                 </div>
 
                 <details>
-                  <summary>Archivist marginalia and related material</summary>
-                  <p>{volume.marginalia}</p>
+                  <summary>Archivist note and related material</summary>
+                  <p>{volume.note}</p>
                   <p className="crossref">
-                    Cross-reference: Appendix {String.fromCharCode(68 + index)}
-                    , map sheet {index + 3}, and witness schedule{" "}
-                    {index % 2 === 0 ? "withheld" : "unavailable"}.
+                    Cross-reference: appendix {index + 2}, map case{" "}
+                    {String.fromCharCode(66 + index)}, and procedure sheet{" "}
+                    {index % 3 === 0 ? "withheld" : "unavailable"}.
                   </p>
                 </details>
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="observations" id="observations">
+        <div>
+          <p className="section-label">Observations</p>
+          <h2>Material accompanying the journals</h2>
+        </div>
+        <div className="asset-grid" aria-label="Archival material">
+          <div className="asset botanical">
+            <span>Engraved botanical plate</span>
+          </div>
+          <div className="asset medical">
+            <span>Victorian medical engraving</span>
+          </div>
+          <div className="asset map">
+            <span>Uncorrected city map</span>
+          </div>
+          <div className="asset ledger">
+            <span>Committee ledger slip</span>
+          </div>
         </div>
       </section>
 
@@ -330,56 +319,51 @@ export default function Home() {
           <p>
             The Institute will receive invited observers for a formal
             presentation of the Grimsby sequence. Attendance is by written
-            invitation only. Observers are asked to arrive with no prepared
-            interpretive statement.
+            invitation only.
           </p>
         </div>
         <div className="notice">
-          <div>
-            <p className="notice-date">31 October 2026 / Boston</p>
-            <h3>Public Observation Register: H-31 Sequence</h3>
-          </div>
           <ol>
-            {demonstrationSequence.map((item) => (
+            {observations.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ol>
         </div>
       </section>
 
-      <section className="personnel" id="personnel">
+      <section className="reading-room" id="reading-room">
         <div>
-          <p className="section-label">Personnel</p>
-          <h2>Associated names</h2>
+          <p className="section-label">Reading Room</p>
+          <h2>Conditions for consultation</h2>
         </div>
-        <div className="people-grid">
-          {personnel.map(([name, role]) => (
-            <article key={name}>
-              <h3>{name}</h3>
-              <p>{role}</p>
-            </article>
-          ))}
+        <div className="paper-panel">
+          <p>
+            Readers are asked to proceed in sequence and to avoid summarising a
+            volume before opening the next. Personal theories may be recorded on
+            the loose cream slips provided, but must not be inserted into the
+            bindings.
+          </p>
+          <p>
+            The Institute cannot confirm private reconstructions of H-31 without
+            the corresponding absence slips.
+          </p>
         </div>
       </section>
 
-      <section className="contact" id="contact">
+      <section className="registry" id="registry">
         <div>
-          <p className="section-label">Contact</p>
-          <h2>Reading room enquiries</h2>
+          <p className="section-label">Registry</p>
+          <h2>Selected catalogue elements</h2>
         </div>
-        <address>
-          Grimsby Institute of Experimental Medicine
-          <br />
-          Catalogue Room B, North Registry
-          <br />
-          Boston, Massachusetts
-          <br />
-          archive@grimsby-institute.example
-        </address>
-        <p className="quiet-note">
-          The Institute cannot authenticate private copies of the H-31 journals
-          without the corresponding absence slips.
-        </p>
+        <div className="registry-list">
+          {registry.map(([name, mark, note]) => (
+            <article key={mark}>
+              <span>{mark}</span>
+              <h3>{name}</h3>
+              <p>{note}</p>
+            </article>
+          ))}
+        </div>
       </section>
     </main>
   );
